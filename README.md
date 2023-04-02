@@ -1,2 +1,5 @@
-# ut
-Library for working with time in Golang
+<div align="center">
+
+# Universal Time
+
+</div>
