@@ -5,7 +5,8 @@ import (
 )
 
 type Time struct {
-	Now  time.Time
-	UTC  string
-	Unix int64
+	Now       time.Time
+	Timestamp int64
+	Zone      string
+	UTC       time.Time
 }
