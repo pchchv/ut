@@ -21,3 +21,12 @@ func New() (t Time) {
 
 	return
 }
+
+func (t *Time) byLocation(zone string) (inZoneTime time.Time, err error) {
+	location, err := time.LoadLocation(zone)
+	if err != nil {
+		return
+	}
+
+	return t.Now.In(location), nil
+}
